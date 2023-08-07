@@ -3,7 +3,7 @@ import { Construct } from "constructs";
 import * as s3 from "aws-cdk-lib/aws-s3";
 import { getAccountUniqueName, Account } from "../config/accounts";
 import { HelloCdkStackProps } from "../hello-cdk-stack";
-import { SYSTEM_NAME } from "../config/common";
+import { SYSTEM_NAME } from "../config/commons";
 
 export class HelloCdkS3Stack extends cdk.Stack {
   public bucket: s3.IBucket;
