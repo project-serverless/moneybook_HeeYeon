@@ -50,7 +50,7 @@ export class MoneybookApiStack extends cdk.Stack {
       `${SYSTEM_NAME}-create-file`,
       {
         functionName: `${getAccountUniqueName(props.context)}-create-file`,
-        entry: path.join(__dirname, "../../../app/backend/create-file"),
+        entry: path.join("C://Users//"USERNAME"/hello-cdk/app/backend/create-file"),//사용자
         index: "create_file.py",
         handler: "lambda_handler",
         runtime: Runtime.PYTHON_3_10,
@@ -68,7 +68,7 @@ export class MoneybookApiStack extends cdk.Stack {
         functionName: `${getAccountUniqueName(
           props.context
         )}-add-moneybook-item`,
-        entry: path.join(__dirname, "../../../app/backend/add-moneybook-item"),
+        entry: path.join("C://Users//"USERNAME"/hello-cdk/app/backend/add-moneybook-item"), //사용자
         runtime: Runtime.PYTHON_3_10,
         role: lambdaRole,
         index: "index.py", // file name
