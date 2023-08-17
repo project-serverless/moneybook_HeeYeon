@@ -1,0 +1,20 @@
+{
+  "version": "33.0.0",
+  "files": {
+    "293443042e8620922414395636dc7a54fbfe5fadd483802458415de79cf08a2a": {
+      "source": {
+        "path": "annieICNMoneyBooks3Stack308186F5.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-ap-northeast-2": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-ap-northeast-2",
+          "objectKey": "293443042e8620922414395636dc7a54fbfe5fadd483802458415de79cf08a2a.json",
+          "region": "ap-northeast-2",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-ap-northeast-2"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
